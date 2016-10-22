@@ -130,7 +130,7 @@ class User implements UserInterface
      */
     public function hasRole($name)
     {
-        return in_array($name, $this->roles);
+        return in_array($name, $this->roles, true);
     }
 
     /**

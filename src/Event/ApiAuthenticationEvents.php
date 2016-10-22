@@ -28,5 +28,5 @@ final class ApiAuthenticationEvents
      *
      * @var string
      */
-    const API_KEY_AUTHENTICATE = "damijanc.api.key.authenticate";
+    const API_KEY_AUTHENTICATE = 'damijanc.api.key.authenticate';
 }

@@ -57,8 +57,7 @@ class ApiKeyAuthenticator implements SimplePreAuthenticatorInterface
      */
     public function createToken(Request $request, $providerKey)
     {
-        $token = $this->createApiKeyToken($request, $providerKey);
-        return $token;
+        return $this->createApiKeyToken($request, $providerKey);
     }
 
     /**
@@ -96,7 +95,9 @@ class ApiKeyAuthenticator implements SimplePreAuthenticatorInterface
      * @param TokenInterface $token
      * @param UserProviderInterface $userProvider
      * @param $providerKey
+     *
      * @return PreAuthenticatedToken
+     * @throws \Symfony\Component\Security\Core\Exception\AuthenticationException
      */
     public function authenticateToken(TokenInterface $token, UserProviderInterface $userProvider, $providerKey)
     {
@@ -105,10 +106,11 @@ class ApiKeyAuthenticator implements SimplePreAuthenticatorInterface
 
     /**
      * @param \Symfony\Component\Security\Core\Authentication\Token\TokenInterface $token
-     * @param \Symfony\Component\Security\Core\User\UserProviderInterface          $userProvider
+     * @param \Symfony\Component\Security\Core\User\UserProviderInterface $userProvider
      * @param                                                                      $providerKey
      *
      * @return \Symfony\Component\Security\Core\Authentication\Token\PreAuthenticatedToken
+     * @throws \Symfony\Component\Security\Core\Exception\AuthenticationException
      */
     protected function authenticateApiKeyToken(TokenInterface $token, UserProviderInterface $userProvider, $providerKey)
     {

@@ -50,6 +50,7 @@ class LoginUserProvider implements UserProviderInterface
      * @param string $username
      *
      * @return mixed
+     * @throws \Symfony\Component\Security\Core\Exception\UsernameNotFoundException
      */
     public function loadUserByUsername($username)
     {
@@ -73,9 +74,10 @@ class LoginUserProvider implements UserProviderInterface
     /**
      * @param UserInterface $user
      *
-     * @param bool $reauthenticate
      * @return mixed|UserInterface
-     * @throws UnsupportedUserException
+     * @throws \Symfony\Component\Security\Core\Exception\UsernameNotFoundException
+     * @throws \Symfony\Component\Security\Core\Exception\UnsupportedUserException
+     * @internal param bool $reauthenticate
      */
     public function refreshUser(UserInterface $user)
     {
