@@ -1,0 +1,2 @@
+# SecurityBundle
+SecurityBundle for Symfony
