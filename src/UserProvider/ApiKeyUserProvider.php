@@ -2,7 +2,7 @@
 
 namespace Damijanc\SecurityBundle\UserProvider;
 
-use Damijanc\SecurityBundle\Contants\AuthenticationConstants;
+use Damijanc\SecurityBundle\Constants\AuthenticationConstants;
 use Damijanc\SecurityBundle\User\User;
 use JMS\DiExtraBundle\Annotation\Inject;
 use JMS\DiExtraBundle\Annotation\InjectParams;

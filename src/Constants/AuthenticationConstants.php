@@ -1,6 +1,6 @@
 <?php
 
-namespace Damijanc\SecurityBundle\Contants;
+namespace Damijanc\SecurityBundle\Constants;
 
 /**
  * Class AuthenticationConstants

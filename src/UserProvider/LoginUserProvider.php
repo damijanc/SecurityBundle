@@ -2,7 +2,7 @@
 
 namespace Damijanc\SecurityBundle\UserProvider;
 
-use Damijanc\SecurityBundle\Contants\AuthenticationConstants;
+use Damijanc\SecurityBundle\Constants\AuthenticationConstants;
 use Damijanc\SecurityBundle\User\User;
 use JMS\DiExtraBundle\Annotation as JMS;
 use Symfony\Component\EventDispatcher\EventDispatcherInterface;
