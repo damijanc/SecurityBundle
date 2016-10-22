@@ -1,0 +1,28 @@
+{
+  "name": "damijanc/security-bundle",
+  "description": "Security bundle for Symfony",
+  "type": "library",
+  "require": {
+    "php": ">=5.4.0",
+    "jms/di-extra-bundle": "^1.8",
+    "symfony/security": "^3.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^5.2"
+  },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Damijan Cavar",
+      "email": "damijan@cavar.si"
+    }
+  ],
+  "autoload": {
+
+    "psr-4": {
+      "Damijanc\\SecurityBundle\\": "src/",
+      "Damijanc\\SecurityBundle\\Tests\\": "tests/"
+    }
+  }
+
+}
