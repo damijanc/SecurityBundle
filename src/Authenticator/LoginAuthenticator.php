@@ -46,7 +46,10 @@ class LoginAuthenticator implements SimpleFormAuthenticatorInterface
      * @param TokenInterface $token
      * @param UserProviderInterface $userProvider
      * @param $providerKey
+     *
      * @return UsernamePasswordToken
+     * @throws \InvalidArgumentException
+     * @throws \Symfony\Component\Security\Core\Exception\AuthenticationException
      */
     public function authenticateToken(TokenInterface $token, UserProviderInterface $userProvider, $providerKey)
     {
@@ -92,7 +95,9 @@ class LoginAuthenticator implements SimpleFormAuthenticatorInterface
      * @param $username
      * @param $password
      * @param $providerKey
+     *
      * @return UsernamePasswordToken
+     * @throws \InvalidArgumentException
      */
     public function createToken(Request $request, $username, $password, $providerKey)
     {

@@ -2,7 +2,7 @@
 
 namespace Damijanc\SecurityBundle\UserProvider;
 
-use Damijanc\SecurityBundle\Contants\AuthenticationConstants;
+use Damijanc\SecurityBundle\Constants\AuthenticationConstants;
 use Damijanc\SecurityBundle\User\User;
 use JMS\DiExtraBundle\Annotation\Inject;
 use JMS\DiExtraBundle\Annotation\InjectParams;
@@ -42,6 +42,7 @@ class ApiKeyUserProvider implements UserProviderInterface
      * @param string $username
      *
      * @return mixed
+     * @throws \Symfony\Component\Security\Core\Exception\UsernameNotFoundException
      */
     public function loadUserByUsername($username)
     {
@@ -64,6 +65,8 @@ class ApiKeyUserProvider implements UserProviderInterface
      * @param UserInterface $user
      *
      * @return mixed
+     * @throws \Symfony\Component\Security\Core\Exception\UsernameNotFoundException
+     * @throws \Symfony\Component\Security\Core\Exception\UnsupportedUserException
      */
     public function refreshUser(UserInterface $user)
     {
