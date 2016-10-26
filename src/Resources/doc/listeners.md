@@ -1,3 +1,13 @@
+##Listeners
+
+Bundle raises 2 events AUTHENTICATE and API_KEY_AUTHENTICATE.
+In order for bundle to work you need to implement event listeners in your code that will handle your api call and responses.
+
+When you retrieve your user set it to ```AuthenticationConstants::SECURITY_TOKEN_NAME``` session variable.
+
+Bellow is an empty shell you can use as an entry point.
+
+```php
 <?php
 
 namespace Damijanc\SecurityBundle\Event;
@@ -61,3 +71,5 @@ class ApiAuthenticationEventListener implements EventSubscriberInterface
         return $event;
     }
 }
+
+```

@@ -11,15 +11,18 @@ that you can use to login.
 Bundle will raise event that you need to implement listener for and do authentication there.
 This way you are decoupled from db access that is implied when using Symfony security. 
 
-#Instalation
+##Instalation
 ```
 composer require damijanc/security-bundle
 ```
 
-#Contribution
+##Documentation
 
+Please read the documetation [documetation](Resources/doc/index.md)
 
-#Todo
-- Update documentation 
+## Contribution
+ Please open an issue if you encounter an error or have a suggestion. Pull requests are welcome.
+
+##Todo
 - Make a sample project
 - ...
