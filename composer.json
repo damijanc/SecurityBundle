@@ -18,9 +18,8 @@
     }
   ],
   "autoload": {
-
     "psr-4": {
-      "Damijanc\\SecurityBundle\\": "src/",
+      "Damijanc\\SecurityBundle\\": "",
       "Damijanc\\SecurityBundle\\Tests\\": "tests/"
     }
   }
