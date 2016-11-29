@@ -18,7 +18,7 @@ composer require damijanc/security-bundle
 
 ##Documentation
 
-Please read the documetation [documetation](src/Resources/doc/index.md)
+Please read the [documentation](Resources/doc/index.md)
 
 ## Contribution
  Please open an issue if you encounter an error or have a suggestion. Pull requests are welcome.
